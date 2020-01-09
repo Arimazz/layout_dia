@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,500,700&display=swap");
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400; }
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+.blue-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 800px;
+  border-radius: 0 0 0 200px;
+  padding: 48px 0 0 227px;
+  background-color: #008aff; }
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .header__logo {
+    width: 60px;
+    height: 28px; }
+  .header__nav-wrap {
+    margin-left: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-width: 1000px;
+    width: 100%; }
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0; }
+  .nav__item {
+    padding: 0;
+    margin-right: 64px; }
+  .nav__link {
+    position: relative;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 150%;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 3px; }
+    .nav__link--is-active {
+      margin-left: 60px; }
+      .nav__link--is-active::before {
+        position: absolute;
+        content: "";
+        height: 2px;
+        width: 100%;
+        top: calc(100% + 8px);
+        border-radius: 4px;
+        background-color: #ff9c8e; }
+
+.intro-slider-wrap {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.intro {
+  max-width: 460px; }
+  .intro__heading {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 68px;
+    color: #fff;
+    margin-bottom: 32px; }
+  .intro__description {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    max-width: 460px;
+    color: #fff;
+    margin-bottom: 56px; }
+  .intro__button {
+    border: 0;
+    border-radius: 64px;
+    width: 226px;
+    height: 50px;
+    background-color: #ff9c8e; }
+  .intro__link {
+    text-decoration: none;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 22px;
+    color: #fff; }
+
+.slider {
+  position: relative;
+  width: 687px;
+  height: 680px;
+  background-image: url("../images/slider/slide-1.png");
+  background-position: center;
+  background-size: cover; }
+  .slider__menu {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    left: 48px;
+    bottom: 48px; }
+  .slider__arrows-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 24px; }
+  .slider__arrow-box {
+    position: relative;
+    background-color: #fff;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%; }
+    .slider__arrow-box:first-child {
+      margin-right: 8px; }
+  .slider__arrow {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
+  .slider__text-box {
+    color: #fff; }
+  .slider__name {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 19px;
+    letter-spacing: 3px;
+    margin-bottom: 8px; }
+  .slider__description {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 140%; }
+
+html, body, p, ul, li, button, textarea, input, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+body {
+  background: #eee; }
+
+/*# sourceMappingURL=main.css.map */
