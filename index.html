@@ -7,70 +7,74 @@
     <link rel="stylesheet" href="./styles/main.css">
   </head>
   <body>
-    <header class="blue-box">
-
-      <div class="header">
+    <header class="header" id="home">
+      <nav class="header__top">
         <img class="header__logo" src="./images/logo/dia-logo.svg" alt="Logo">
-        <nav class="header__nav-wrap">
-          <ul class="header__nav nav">
-            <li class="nav__item">
-              <a href="#" class="nav__link">Home</a>
-            </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">About us</a>
-            </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">Services</a>
-            </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">Work</a>
-            </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">Contact Us</a>
-            </li>
-          </ul>
-          <a href="#" class="nav__link nav__link--is-active">Hire us</a>
-        </nav>
-      </div>
+        <ul class="header__nav nav">
+          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="#who-we-are" class="nav__link">About us</a></li>
+          <li class="nav__item"><a href="#our-expertise" class="nav__link">Services</a></li>
+          <li class="nav__item"><a href="#testimonials" class="nav__link">Work</a></li>
+          <li class="nav__item"><a href="#footer" class="nav__link">Contact Us</a></li>
+        </ul>
+        <a href="#" class="nav__link nav__link--active">Hire Us</a>
 
-      <div class="intro-slider-wrap">
-        <div class="intro">
-            <h1 class="intro__heading">
-              Global digital agency
-            </h1>
-            <p class="intro__description">
-              By the same illusion which lifts the horizon
-              of the sea to the level of the spectator on a hillside, the sable cloud beneath.
-            </p>
-            <button class="intro__button">
-              <a href="#" class="intro__link">Learn more</a>
-            </button>
+        <div class="hamburger" onclick="myFunction()">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
         </div>
-        <div class="slider">
-          <div class="slider__menu">
-            <div class="slider__arrows-box">
-              <button class="slider__arrow-box">
-                <img alt="arrow left" class="slider__arrow" src="./images/slider/arrow-left.svg">
-              </button>
-              <button class="slider__arrow-box">
-                <img alt="arrow right" class="slider__arrow" src="./images/slider/arrow-right.svg">
-              </button>
-            </div>
-            <div class="slider__text-box">
-              <p class="slider__name">
-                Intro
-              </p>
-              <p class="slider__description">
-                By the same illusion which lifts the<br>horizon.</p>
-            </div>
+      </nav>
+
+     <div class="header__main main">
+       <div class="main__info-block">
+         <h1 class="main__heading">
+          Strategic Agency
+         </h1>
+         <p class="main__description">
+          We believe in the power of bold ideas that can solve business challenges.
+         </p>
+         <button class="main__button">
+           <a href="#" class="main__link">Learn more</a>
+         </button>
+       </div>
+       <div class="main__slider slider">
+        <div class="slider__menu">
+
+          <div class="slider__arrows-box">
+            <button class="slider__arrow-box">
+              <img alt="arrow left" class="slider__arrow" src="./images/slider/arrow-left.svg">
+            </button>
+            <button class="slider__arrow-box">
+              <img alt="arrow right" class="slider__arrow" src="./images/slider/arrow-right.svg">
+            </button>
+          </div>
+
+          <div class="slider__text-box">
+            <p class="slider__name">
+              Intro
+            </p>
+            <p class="slider__description">
+              By the same illusion which lifts the<br>horizon.</p>
           </div>
         </div>
-      </div>
+       </div>
+
+       <div class="mobile-menu">
+        <ul class="header__nav nav nav-mobile">
+          <li class="nav__item nav__item-mobile"><a href="#" class="nav__link nav__link-mobile">Home</a></li>
+          <li class="nav__item nav__item-mobile"><a href="#" class="nav__link nav__link-mobile">About us</a></li>
+          <li class="nav__item nav__item-mobile"><a href="#" class="nav__link nav__link-mobile">Services</a></li>
+          <li class="nav__item nav__item-mobile"><a href="#" class="nav__link nav__link-mobile">Work</a></li>
+          <li class="nav__item nav__item-mobile"><a href="#" class="nav__link nav__link-mobile">Contact Us</a></li>
+        </ul>
+       </div>
+     </div>
 
     </header>
 
     <main>
-      <section class="section">
+      <section class="section" id="who-we-are">
         <div class="about-us">
           <h3 class="about-us__heading">Who we are</h3>
           <p class="about-us__text">We embrace a strategic approach to creative ideas. We are interested
@@ -80,7 +84,7 @@
         </div>
       </section>
   
-      <section class="section">
+      <section class="section" id="our-expertise">
   
         <div class="our-expertise">
           <h3 class="our-expertise__heading">Our expertise</h3>
@@ -116,7 +120,7 @@
   
       </section>
   
-      <section class="section">
+      <section class="section" id="process">
         <div class="process">
           <div class="process__info info">
             <p class="info__title">Process</p>
@@ -194,7 +198,7 @@
         </div>
       </section>
   
-      <section class="section section--without-bottom-padding">
+      <section class="section section-approach" id="approach">
         <div class="approach">
           <div class="approach__text">
             <p class="approach__title">
@@ -243,14 +247,16 @@
         </div>
       </section>
 
-      <section class="section">
+      <section class="section" id="testimonials">
         <div class="testimonials">
-          <p class="testimonials__title">
-            Testimonials
-          </p>
-          <p class="testimonials__heading">
-            What<br>people say
-          </p>
+          <div>
+            <p class="testimonials__title">
+              Testimonials
+            </p>
+            <p class="testimonials__heading">
+              What people say
+            </p>
+          </div>
           <div class="testimonials__list">
 
             <div class="testimonials__item">
@@ -315,7 +321,7 @@
         </div>
       </section>
 
-      <section class="section section--vision">
+      <section class="section section--vision" id="vision">
         <div class="vision">
           <div class="vision__wrapper">
             <h3 class="vision__header">
@@ -344,33 +350,35 @@
       </section>
     </main>
 
-    <footer class="footer">
-      <form action="" class="footer__form form">
-        <h3 class="form__heading">
-          Send us  a message
-        </h3>
-        <label class="input__wrap">
-          <input class="form__input" type="text" placeholder="email@exa">
-        </label>
-        <label class="input__wrap">
-          <input class="form__input" type="text" placeholder="Your name">
-        </label>
-        <label class="input__wrap">
-          <input class="form__input" type="text" placeholder="Your message">
-        </label>
-        <button class="form__button" type="submit">Send</button>
-      </form>
-      <div class="footer__contact contact">
-        <h3 class="contact__heading">Contact us</h3>
-        <p class="contact__title">Call us</p>
-        <p class="contact__text">654 321 987</p>
-        <p class="contact__title">Visit us</p>
-        <p class="contact__text">2905 West Drive, Buffalo Grove</p>
-        <p class="contact__title">Our socials</p>
-        <div class="contact__icons">
-          <img class="contact__icon" src="./images/contact/facebook 1.svg" alt="">
-          <img class="contact__icon" src="./images/contact/twitter 1.svg" alt="">
-          <img class="contact__icon" src="./images/contact/instagram.svg" alt="">
+    <footer class="footer" id="footer">
+      <div class="footer__wrap">
+        <form action="" class="footer__form form">
+          <h3 class="form__heading">
+            Send us  a message
+          </h3>
+          <label class="input__wrap">
+            <input class="form__input" type="text" placeholder="email@exa">
+          </label>
+          <label class="input__wrap">
+            <input class="form__input" type="text" placeholder="Your name">
+          </label>
+          <label class="input__wrap">
+            <input class="form__input" type="text" placeholder="Your message">
+          </label>
+          <button class="form__button" type="submit">Send</button>
+        </form>
+        <div class="footer__contact contact">
+          <h3 class="contact__heading">Contact us</h3>
+          <p class="contact__title">Call us</p>
+          <p class="contact__text">654 321 987</p>
+          <p class="contact__title">Visit us</p>
+          <p class="contact__text">2905 West Drive, Buffalo Grove</p>
+          <p class="contact__title">Our socials</p>
+          <div class="contact__icons">
+            <img class="contact__icon" src="./images/contact/facebook 1.svg" alt="">
+            <img class="contact__icon" src="./images/contact/twitter 1.svg" alt="">
+            <img class="contact__icon" src="./images/contact/instagram.svg" alt="">
+          </div>
         </div>
       </div>
     </footer>
