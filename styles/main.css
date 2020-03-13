@@ -180,21 +180,14 @@ h1 {
       -webkit-transform: scale(1.2);
               transform: scale(1.2); }
   .main__link {
-    -webkit-transition: -webkit-transform 0.3s;
-    transition: -webkit-transform 0.3s;
-    transition: transform 0.3s;
-    transition: transform 0.3s, -webkit-transform 0.3s;
     display: block;
     font-family: Poppins, sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 15px;
-    line-height: 22px;
+    line-height: 50px;
     text-decoration: none;
     color: #fff; }
-    .main__link:hover, .main__link:focus, .main__link:focus-within {
-      -webkit-transform: scale(1.2);
-              transform: scale(1.2); }
 
 .slider {
   position: absolute;
@@ -351,7 +344,14 @@ h1 {
           flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s; }
+  .our-exp-option:hover, .our-exp-option:focus, .our-exp-option:focus-within {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2); }
   .our-exp-option__image {
     width: 184px;
     height: 166px;
@@ -496,6 +496,7 @@ h1 {
     background-color: #008aff;
     border: 0;
     border-radius: 50%;
+    cursor: pointer;
     margin-right: 16px; }
     .card__button:hover, .card__button:focus, .card__button:focus-within {
       -webkit-transform: scale(1.2);
@@ -658,7 +659,14 @@ h1 {
           justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s; }
+  .appr-option:hover, .appr-option:focus, .appr-option:focus-within {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2); }
   @media (max-width: 650px) {
     .appr-option {
       -webkit-box-orient: vertical;
@@ -746,7 +754,14 @@ h1 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 32px; }
+    padding: 32px;
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+    transition: transform 0.3s, -webkit-transform 0.3s; }
+    .testimonials__item:hover, .testimonials__item:focus, .testimonials__item:focus-within {
+      -webkit-transform: scale(1.2);
+              transform: scale(1.2); }
   .testimonials__photo {
     position: relative;
     margin-bottom: 82px; }
@@ -864,6 +879,15 @@ h1 {
     .vision__button:hover, .vision__button:focus, .vision__button:focus-within {
       -webkit-transform: scale(1.2);
               transform: scale(1.2); }
+  .vision__link {
+    display: block;
+    font-family: Poppins, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 56px;
+    text-decoration: none;
+    color: #fff; }
   .vision__oval {
     position: absolute;
     border-radius: 500px;
